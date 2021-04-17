@@ -1,0 +1,13 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  password: "123456"
+  host: 127.0.0.1
+  port: 3306
+development:
+  <<: *default
+  database: apartment_development
+test:
+  <<: *default
+  database: apartment_test
