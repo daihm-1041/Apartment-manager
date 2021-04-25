@@ -10,6 +10,14 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
+
  *= require_self
- */
+ *= require "vendor/bootstrap/dist/css/bootstrap.css"
+ *= require "vendor/PACE/themes/blue/pace-theme-minimal.css"
+ *= require "vendor/perfect-scrollbar/css/perfect-scrollbar.min.css"
+ *= require "css/font-awesome.min.css"
+ *= require "css/themify-icons.css"
+ *= require "css/materialdesignicons.min.css"
+ *= require "css/animate.min.css"
+ *= require "css/app.css"
+*/
