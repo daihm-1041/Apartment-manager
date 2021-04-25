@@ -11,6 +11,20 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render "layouts/header.html.erb" %>
+    <%= render "layouts/navbar.html.erb" %>
+    <div class="page-container">
+      <%= yield %>
+    </div>
+    <%= render "layouts/footer.html.erb" %>
+    <script src="assets/js/vendor.js"></script>
+
+    <script src="assets/js/app.min.js"></script>
+
+    <!-- page js -->
+    <script src="assets/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="assets/vendor/jquery.sparkline/jquery.sparkline.min.js"></script>
+    <script src="assets/js/dashboard/default.js"></script>
+
   </body>
 </html>
